@@ -24,6 +24,7 @@ import com.android.settings.accounts.AccountDashboardFragment;
 import com.android.settings.accounts.AccountDetailDashboardFragment;
 import com.android.settings.applications.AppAndNotificationDashboardFragment;
 import com.android.settings.connecteddevice.AdvancedConnectedDeviceDashboardFragment;
+import com.android.settings.desktop.DesktopDashboardFragment;
 import com.android.settings.connecteddevice.ConnectedDeviceDashboardFragment;
 import com.android.settings.development.DevelopmentSettingsDashboardFragment;
 import com.android.settings.deviceinfo.StorageDashboardFragment;
@@ -107,6 +108,8 @@ public class DashboardFragmentRegistry {
                 CategoryKey.CATEGORY_GESTURES);
         PARENT_TO_CATEGORY_KEY_MAP.put(NightDisplaySettings.class.getName(),
                 CategoryKey.CATEGORY_NIGHT_DISPLAY);
+        PARENT_TO_CATEGORY_KEY_MAP.put(DesktopDashboardFragment.class.getName(),
+                CategoryKey.CATEGORY_MARU_DESKTOP);
         PARENT_TO_CATEGORY_KEY_MAP.put(PrivacyDashboardFragment.class.getName(),
                 CategoryKey.CATEGORY_PRIVACY);
         PARENT_TO_CATEGORY_KEY_MAP.put(EnterprisePrivacySettings.class.getName(),
